@@ -1,0 +1,439 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+/*	color: #4F4F4F;*/
+	color: #26466D;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+html{
+	height: 100%;
+}
+
+#container{
+	width: 90%;
+	margin: 0 auto;
+	padding: 1rem;
+	background-color: #fff;
+}
+
+body{
+/*	background-color: #FDF5E6;*/
+/*	background-color: #FFEFD5;*/
+	background-color: #DEDEDE;
+}
+
+header{
+/*	background-color: #000;*/
+	/*border-bottom: 3px solid #A4DCD1;*/
+	border-bottom: 3px solid #78AB46;
+/*	border-bottom: 3px solid #F08080;
+*/	margin-bottom: 50px;
+}
+
+header h1{
+/*	color: #fff;*/
+	margin: 0 0 0 15px;
+	padding: 15px 0 0 0;
+	font-size: 2.1em;
+}
+
+header h2{
+/*	color: #fff;*/
+	margin: 0 0 5px 15px;
+	font-size: 1.5em;
+}
+
+header a{
+	text-decoration: none;
+	color: #26466D;
+}
+
+header ul{
+	list-style: none;
+	height: auto;
+	float: right;
+}
+
+header li{
+	display: inline;
+	padding-right: 30px;
+	font-size: 1.25em;
+}
+
+#tagline{
+	font-size: 1.6em;
+	text-align: center;
+	margin: 3px;
+}
+
+#carousel{
+	height: 425px;
+	width: auto;
+	margin-bottom: 5px;
+	text-align: center;
+	border: 2px solid #26466D;
+}
+
+#carousel img{
+	width: auto;
+	height: 100%;
+	padding: 20px;
+}
+
+#previous{
+	float: left;
+	margin-top: 180px;
+	margin-left: 120px;
+}
+
+#next{
+	margin-top: 180px;
+	margin-right: 120px;
+}
+
+.columns{
+	width: 33.3333%; /* or calc(100%/3) */
+	height: 225px;
+	float: left;
+	padding: 0 30px;
+	margin-top: 25px;
+}
+
+.columns p{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.columns + .columns{
+	border-left: 3px solid #A4DCD1;
+}
+
+button{
+	background-color: #A4DCD1;
+	border-radius: 2px;
+	float: right;
+}
+
+button a{
+	text-decoration: none;
+}
+
+button:hover{
+	color: #616161;
+}
+
+footer{
+	text-align: center;
+	background-color: #78AB46;
+/*	background-color: #F08080;*/
+	/*background-color: #A4DCD1;*/
+	padding: 20px;
+	margin-top: 40px;
+	clear: both;
+}
+
+#footer_one{
+	padding-right: 30px;
+	font-size: 1.1em;
+}
+
+#footer_two{
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.1em;
+	border-left: 3px solid #26466D;
+}
+
+#footer_three{
+	padding-left: 30px;
+	font-size: 1.1em;
+	border-left: 3px solid #26466D;
+}
+
+
+/*styling for About Page starts here */
+
+#biopic{
+	float: left;
+	height: 500px;
+	width: 375px;
+	margin: 30px;
+}
+
+#bio{
+	float: left;
+	margin-top: 20px;
+	width: 55%;
+	text-align: center;
+}
+
+#bio h3{
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+#bio p{
+	font-size: 1.04em;
+	margin: 5px;
+}
+
+/*styling for services page starts here*/
+
+.myservices{
+	text-align: center;
+	margin: 0 0 50px 0;
+	font-size: 2em;
+}
+.services h4{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 1.3em;
+}
+
+.services{
+	height: 15%;
+	width: 85%;
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-right: 50px;
+	border: 3px solid #A4DCD1;
+	background-color: #A4DCD1;
+}
+
+.services a{
+	color: #26466D;
+/*	color: #344152;*/
+	text-decoration: none;
+}
+
+#copytext, #socialtext, #emailtext, #fewdtext, #pricingtext{
+	text-align: center;
+	display: none;
+	margin-left: 125px;
+	margin-right: 125px;
+}
+
+h5{
+	font-size: 1.1em;
+	font-style: bold;
+}
+
+.services_copy{
+	font-size: 1.1em;
+}
+
+.center{
+	text-align: left;
+	margin-left: 140px;
+}
+
+/*styling for portfolio page begins here*/
+/*
+h4{
+	text-align: center;
+	font-size: 2em;
+}*/
+
+.client{
+	position: relative;
+}
+
+.client, .copy, .client img{
+	width: 320px;
+	height: 320px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+/*	margin-top: 50px;*/
+	margin-bottom: 40px;
+}
+
+.copy, .client img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+.portfolio{
+/*	height: 300px;
+	width: 300px;*/
+    opacity: 1.0;
+    transition: opacity 700ms ease-in-out;
+    pointer-events: none;
+    /*border: 3px solid #F08080;*/
+    border: 3px solid #A4DCD1;
+}
+
+.client:hover img{
+	opacity: 0.0;
+}
+
+.client:hover .copy{
+	height: auto;
+}
+
+.copy{
+	text-align: center;
+	text-decoration: bold;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	height:  0;
+}
+
+.copy p, .copy h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.copy p{
+	font-size: 0.8em;
+}
+
+.copy a{
+	color: #26466D;
+	text-decoration: none;
+}
+
+a:hover{
+    color: #616161;
+}
+
+/*styling for contact page starts here*/
+
+.contact{
+	text-align: center;
+}
+
+#fairy{
+	height: 400px;
+	width: 400px;
+}
+
+.badges{
+	margin: 20px;
+}
+
+/*styling for modals start here*/
+
+.acepTrigger, .bloomTrigger, .manifestaTrigger, .enablevueTrigger, .townshopTrigger{
+	cursor: pointer;
+}
+
+#overlay, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: none;
+    transition: opacity 50ms ease-in-out;
+    z-index: 1;
+}
+
+#overlay.show, #overlay2.show, #overlay3.show, #overlay4.show, #overlay5.show, #overlay6.show{
+    opacity: 1.0;
+    display: block;
+}
+
+#modalContent{
+    padding: 1rem;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    left: 0;
+    top: 1rem;
+    bottom: 0;
+    right: 0;
+    width: 68%;
+    height: 88%;
+    overflow: hidden;
+    border: 6px solid #26466D;
+}
+
+#modalContent img{
+	float: left;
+	width: 42%;
+	margin: 1rem;
+	height: 50%;
+}
+
+#modalContent #bloomPic{
+	height: 60%;
+	width: 40%;
+}
+
+#modalContent #manifestaPic{
+	height: 40%;
+	width: 45%;
+}
+
+#modalContent #townshopPic{
+	height: 35%;
+	width: 45%;
+}
+
+.projectDetails{
+	float: left;
+	margin: 1rem;
+	margin-left: 3rem;
+	margin-top: 6rem;
+	vertical-align: center;
+}
+
+#bloomDetails{
+	margin-top: 7.5rem;
+}
+
+#townshopDetails{
+	margin-top: 4.5rem;
+}
+
+#modalContent p{
+	font-size: 1.1em;
+	margin: 1rem 1rem 2rem 1rem;
+	width: calc(66%-1rem);
+	float: left;
+}
+
+/*.popup_image{*/
+/*	height: 400px;
+	width: 400px;*/
+	/*margin-left: 38%;
+	float: left;
+	margin-bottom: 30px;
+}
+.popup{
+	text-align: center;
+	font-size: 1.1em;
+	clear: both;
+}
+
+.popup_margin{
+	margin-right: 25%;
+	margin-left: 25%;
+	margin-bottom: 10%;
+}*/
+
+/*
+ul{
+	margin-left: 40%;
+	font-size: 1.25em;
+	float: right;
+}*/
