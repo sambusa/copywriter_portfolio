@@ -26,28 +26,21 @@ html{
 }
 
 body{
-/*	background-color: #FDF5E6;*/
-/*	background-color: #FFEFD5;*/
 	background-color: #DEDEDE;
 }
 
 header{
-/*	background-color: #000;*/
-	/*border-bottom: 3px solid #A4DCD1;*/
 	border-bottom: 3px solid #78AB46;
-/*	border-bottom: 3px solid #F08080;
-*/	margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 header h1{
-/*	color: #fff;*/
 	margin: 0 0 0 15px;
 	padding: 15px 0 0 0;
 	font-size: 2.1em;
 }
 
 header h2{
-/*	color: #fff;*/
 	margin: 0 0 5px 15px;
 	font-size: 1.5em;
 }
@@ -242,11 +235,7 @@ h5{
 }
 
 /*styling for portfolio page begins here*/
-/*
-h4{
-	text-align: center;
-	font-size: 2em;
-}*/
+
 
 .client{
 	position: relative;
@@ -270,12 +259,9 @@ h4{
 }
 
 .portfolio{
-/*	height: 300px;
-	width: 300px;*/
     opacity: 1.0;
     transition: opacity 700ms ease-in-out;
     pointer-events: none;
-    /*border: 3px solid #F08080;*/
     border: 3px solid #A4DCD1;
 }
 
@@ -411,29 +397,3 @@ a:hover{
 	width: calc(66%-1rem);
 	float: left;
 }
-
-/*.popup_image{*/
-/*	height: 400px;
-	width: 400px;*/
-	/*margin-left: 38%;
-	float: left;
-	margin-bottom: 30px;
-}
-.popup{
-	text-align: center;
-	font-size: 1.1em;
-	clear: both;
-}
-
-.popup_margin{
-	margin-right: 25%;
-	margin-left: 25%;
-	margin-bottom: 10%;
-}*/
-
-/*
-ul{
-	margin-left: 40%;
-	font-size: 1.25em;
-	float: right;
-}*/
