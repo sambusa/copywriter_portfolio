@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
 			<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
@@ -8,10 +9,17 @@
 	<body>
 		<div id="container">
 		<header class="clearfix">
-			<h1><a href="homepage.html">Sam(antha) Busa</a></h1>
+			<h1><a href="index.html">Sam(antha) Busa</a></h1>
 			<h2>Copywriter</h2>
 			<nav>
 				<ul>
+					<li class="hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</li>
+				</ul>
+				<ul class="dropmenu hiddenmenu">
 					<li><a href="about.html">About</a></li>
 					<li><a href="services.html">Services</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
@@ -22,31 +30,32 @@
 		<div id="tagline">
 			<p>Telling the stories of clients from all over the US since 2012.</p>
 		</div>
+		<img class="biopic" id="hiddenpic" src="images/profesh2.jpg"></img>
 		<div id="carousel">
 			<button id="previous"><</button>
 			<img src='' ></img>
 			<button id="next">></button>
-			<!-- here I need javascript to have images scrolling. I need to figure out how to make them scroll continuously but with a stop option -->
 		</div>
 		<div class="clearfix">
 		<section class="columns">
 			<h3>About</h3>
-			<p>There are three things Sam was absolutely born to do in her life: travel to new places, meet new people, and tell stories. These callings combined have led her to become the unique copywriter that she is today, working with clients in every time zone across the US.</p>
-			<button type='button'><a href='about.html'>Learn More</a></button>
+			<p>There are three things Sam was absolutely born to do in her life: travel to new places, meet new people, and tell stories.<span class="hiddentext">These callings combined have led her to become the unique copywriter that she is today, working with clients in every time zone across the US.</span></p>
+			<button type='button' class="hiddenbutton"><a href='about.html'>Learn More</a></button>
 		</section>
 		<section class="columns">
 			<h3>My Services</h3>
-			<p>My services in digital content marketing include: Copywriting, copy editing and proofing (not the same as proofreading), social media campaigns and maintenance, blog writing and design, email marketing with HTML and CSS included, and more!</p>
-			<button type='button'><a href='services.html'>Learn More</a></button>
+			<p>My services in digital content marketing include: Copywriting, copy editing and proofing (not the same as proofreading), social media campaigns<span class="hiddentext"> &amp; management, blog writing, design, &amp; management, email marketing with design using HTML and CSS</span>, and more!</p>
+			<button type='button' class="hiddenbutton"><a href='services.html'>Learn More</a></button>
 <!-- 		<form action="about.html" id="learnmore">
     		<input type="button" value="Learn More">
 		</form> -->
 		</section>
 		<section class="columns">
 			<h3>My Clients</h3>
-			<p>My experience with clients is vast. I am very familiar and confident working within the project systems of large advertising agencies. That being said, I truly enjoy helping startups and small businesses get off the ground or integrated into the world of digital marketing.</p>
+			<p>My experience with clients is vast. I am very familiar and confident working within the project systems of large advertising agencies.<span class="hiddentext"> That being said, I truly enjoy helping startups and small businesses get off the ground or integrated into the world of digital marketing.<span></p>
 			<button type='button'><a href='portfolio.html'>Learn More</a></button>
 		</section>
+		<button type='button' class="showbutton"><a href='portfolio.html'>Learn More</a></button>
 		</div>
 	<footer>
 		<span id="footer_one">Sam(antha) Busa</span>
