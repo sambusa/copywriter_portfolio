@@ -1,7 +1,6 @@
 *{
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
-/*	color: #4F4F4F;*/
 	color: #26466D;
 }
 
@@ -58,14 +57,39 @@ header ul{
 
 header li{
 	display: inline;
-	padding-right: 30px;
+	padding-right: 40px;
 	font-size: 1.25em;
+}
+
+.hamburger{
+	display: none;
+	float: right;
+	width: 80px;
+}
+
+.line{
+	height: 6px;
+	margin: 0.5rem;
+	border-radius: 3px;
+	background-color: #26466D;
+}
+
+.showbutton{
+	display: none;
 }
 
 #tagline{
 	font-size: 1.6em;
 	text-align: center;
 	margin: 3px;
+}
+
+#hiddenmenu{
+	display: block;
+}
+
+#hiddenpic{
+	display: none;
 }
 
 #carousel{
@@ -129,8 +153,6 @@ button:hover{
 footer{
 	text-align: center;
 	background-color: #78AB46;
-/*	background-color: #F08080;*/
-	/*background-color: #A4DCD1;*/
 	padding: 20px;
 	margin-top: 40px;
 	clear: both;
@@ -157,7 +179,7 @@ footer{
 
 /*styling for About Page starts here */
 
-#biopic{
+.biopic{
 	float: left;
 	height: 500px;
 	width: 375px;
@@ -186,9 +208,14 @@ footer{
 
 /*styling for services page starts here*/
 
+h5{
+	font-size: 1.1em;
+	font-style: bold;
+}
+
 .myservices{
 	text-align: center;
-	margin: 0 0 50px 0;
+	margin-bottom: 30px;
 	font-size: 2em;
 }
 .services h4{
@@ -220,11 +247,6 @@ footer{
 	margin-right: 125px;
 }
 
-h5{
-	font-size: 1.1em;
-	font-style: bold;
-}
-
 .services_copy{
 	font-size: 1.1em;
 }
@@ -232,6 +254,26 @@ h5{
 .center{
 	text-align: left;
 	margin-left: 140px;
+}
+
+#copyediting_image{
+	height: 300px;
+	width: auto;
+}
+
+#social_marketing{
+	height: 300px;
+	width: auto;
+}
+
+#email_marketing{
+	height: 180px;
+	width: 100%;
+}
+
+#blog_recipe{
+	text-align: left;
+	margin-left: 40%;
 }
 
 /*styling for portfolio page begins here*/
@@ -299,25 +341,24 @@ a:hover{
     color: #616161;
 }
 
-/*styling for contact page starts here*/
-
-.contact{
-	text-align: center;
-}
-
-#fairy{
-	height: 400px;
-	width: 400px;
-}
-
-.badges{
-	margin: 20px;
-}
 
 /*styling for modals start here*/
 
 .acepTrigger, .bloomTrigger, .manifestaTrigger, .enablevueTrigger, .townshopTrigger{
 	cursor: pointer;
+}
+
+.projectDetails{
+	float: left;
+	margin: auto;
+	margin-top: 6rem;
+	height: auto;
+	width: auto;
+	vertical-align: center;
+}
+
+.hiddenlink{
+	display: none;
 }
 
 #overlay, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6{
@@ -355,19 +396,19 @@ a:hover{
 
 #modalContent img{
 	float: left;
-	width: 42%;
+	width: auto;
 	margin: 1rem;
-	height: 50%;
+	height: 55%;
 }
 
-#modalContent #bloomPic{
+/*#modalContent #bloomPic{
 	height: 60%;
 	width: 40%;
-}
+}*/
 
 #modalContent #manifestaPic{
 	height: 40%;
-	width: 45%;
+	width: auto;
 }
 
 #modalContent #townshopPic{
@@ -375,16 +416,10 @@ a:hover{
 	width: 45%;
 }
 
-.projectDetails{
-	float: left;
-	margin: 1rem;
-	margin-left: 3rem;
-	margin-top: 6rem;
-	vertical-align: center;
-}
-
 #bloomDetails{
-	margin-top: 7.5rem;
+	margin-top: 6rem;
+	width: auto;
+	height: auto;
 }
 
 #townshopDetails{
@@ -394,6 +429,243 @@ a:hover{
 #modalContent p{
 	font-size: 1.1em;
 	margin: 1rem 1rem 2rem 1rem;
-	width: calc(66%-1rem);
+	width: auto;
+	height: auto;
 	float: left;
+<<<<<<< HEAD
 }
+=======
+}
+
+/*styling for contact page starts here*/
+
+.contact{
+	text-align: center;
+}
+
+#fairy{
+	height: 400px;
+	width: 400px;
+}
+
+.badges{
+	margin: 20px;
+}
+
+/*mediaquery for homepage starts here*/
+
+@media only screen and (max-width: 768px){
+
+h1, h2{
+	float: left;
+	clear: both;
+}
+
+footer{
+	display: block;
+	width: auto;
+}
+
+#footer_one{
+	padding-right: 10px;
+	font-size: 1.1em;
+}
+
+#footer_two{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.1em;
+	border-left: 3px solid #26466D;
+}
+
+#footer_three{
+	padding-left: 10px;
+	font-size: 1.1em;
+	border-left: 3px solid #26466D;
+}
+
+.hamburger{
+	display: block;
+}
+
+#carousel{
+	display: none;
+}
+
+#hiddenpic{
+	display: block;
+}
+
+.dropmenu{
+	display: block;
+	width: 150px;
+	clear: both;
+	float: right;
+	margin-right: 35%;
+}
+
+.hiddenmenu{
+	display: none;
+}
+
+.columns{
+	display: none;
+}
+
+.columns + .columns{
+	border: none;
+}
+
+.hiddentext{
+	display: none;
+}
+
+.showbutton{
+	float: left;
+	margin-left: 35%;
+	display: block;
+	margin-top: 1rem;
+}
+
+/*about page media query starts here*/
+
+.biopic{
+	float: none;
+	height: 350px;
+	width: 280px;
+	margin: 0rem;
+	margin-left: 1rem;
+	text-align: center;
+}
+
+#bio{
+	float: none;
+	width: auto;
+	text-align: center;
+}
+
+#bio h3{
+	text-align: center;
+	font-size: 1.5em;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+#bio p{
+	font-size: 1em;
+	margin: auto;
+}
+
+/*services page media query starts here*/
+
+.myservices{
+	margin: auto;
+	text-align: center;
+	font-size: 1.5em;
+	float: none;
+}
+
+.services{
+	clear: both;
+	height: auto;
+	width: auto;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.services h4{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 1em;
+}
+
+#copytext, #socialtext, #emailtext, #fewdtext, #pricingtext{
+	text-align: center;
+	display: none;
+	margin: auto;
+	font-size: 0.8em;
+}
+
+.center{
+	text-align: left;
+	margin: auto;
+}
+
+#blog_recipe{
+	text-align: left;
+	margin-left: 20%;
+}
+
+#copyediting_image{
+	height: 150px;
+	width: auto;
+}
+
+#social_marketing{
+	height: 150px;
+	width: auto;
+}
+
+#email_marketing{
+	height: 90px;
+	width: 100%;
+}
+
+/*modal media query starts here*/
+
+#modalContent{
+	width: auto;
+	height: auto;
+}
+
+#modalContent img, #townshopPic, #manifestaPic{
+	height: 40%;
+	width: auto;
+	margin: 0.3rem;
+}
+
+#modalContent p{
+	width: auto;
+	height: auto;
+	margin: auto;
+	font-size: 0.8em
+}
+
+#modalContent #townshopPic{
+	width: 85%;
+	height: auto;
+}
+
+.projectDetails, #bloomDetails, #townshopDetails{
+	margin: auto;
+	font-size: 0.7em;
+}
+
+.hiddenlink{
+	display: block;
+	float: right;
+	margin: 0.5rem;
+}
+
+/*mediaquery for contact page starts here*/
+
+.contact{
+	font-size: 1.1em;
+	text-align: center;
+	margin: 0.5rem;
+}
+
+.badges{
+	display: none;
+}
+
+.badges h2{
+	margin-left: 20%;
+}
+
+#footer_one, #footer_two, #footer_three{
+	display: none;
+}
+
+>>>>>>> master
