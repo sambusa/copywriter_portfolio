@@ -432,16 +432,12 @@ a:hover{
 	width: auto;
 	height: auto;
 	float: left;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 }
-=======
-}
+/*=======
+}*/
 
 /*styling for contact page starts here*/
-
-.contact{
-	text-align: center;
-}
 
 #fairy{
 	height: 400px;
@@ -450,6 +446,10 @@ a:hover{
 
 .badges{
 	margin: 20px;
+}
+
+.contact{
+	text-align: center;
 }
 
 /*mediaquery for homepage starts here*/
@@ -668,4 +668,4 @@ footer{
 	display: none;
 }
 
->>>>>>> master
+/*>>>>>>> master*/
