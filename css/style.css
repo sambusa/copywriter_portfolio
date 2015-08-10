@@ -604,7 +604,8 @@ footer{
 
 #social_marketing{
 	height: 150px;
-	width: auto;
+	width: 95%;
+	margin: 0;
 }
 
 #email_marketing{
